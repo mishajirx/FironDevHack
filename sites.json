@@ -2,15 +2,19 @@
   "sites": [
     {
       "address": "http://127.0.0.1:8080/",
-      "state": "Active"
+      "state": "Nonactive"
     },
     {
       "address": "http://127.0.0.1:8000/",
-      "state": "Active"
+      "state": "Nonactive"
     },
     {
       "address": "http://127.0.0.1:5050/",
-      "state": "Not Found (404)"
+      "state": "Nonactive"
+    },
+    {
+      "address": "http://127.0.0.1:8080/",
+      "state": "-"
     }
   ]
 }

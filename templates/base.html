@@ -8,22 +8,13 @@
 <body>
     <header>
         <nav>
-            <h1 style="padding: 20px; background-color: rgba(128, 128, 128, .3)">Your statistics</h1>
+            <h1 style="padding: 20px; background-color: rgba(128, 128, 128, .3)">Your Statistics</h1>
         </nav>
     </header>
-        <h2>Your IP-addresses</h2>
-        <table style="alignment: center; padding: 30px; font-size: large"; cellpadding = 20px>
-
-            {% for item in sites['sites'] %}
-                <tr>
-                    <td>{{loop.index}}</td>
-
-                    <td>{{item['address']}}</td>
-
-                    <td>{{item['state']}}</td>
-                </tr>
-            {% endfor %}
-        </table>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
 

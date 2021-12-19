@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Your IP-addresses</h2>
+        <table style="alignment: center; padding: 30px; font-size: large"; cellpadding = 20px>
+
+            {% for item in sites['sites'] %}
+                <tr>
+                    <td>{{loop.index}}</td>
+
+                    <td>{{item['address']}}</td>
+
+                    <td>{{item['state']}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+{% endblock %}
