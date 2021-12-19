@@ -11,19 +11,19 @@
             <h1 style="padding: 20px; background-color: rgba(128, 128, 128, .3)">Your statistics</h1>
         </nav>
     </header>
-    <!-- Begin page content -->
-    <main role="main" class="container">
         <h2>Your IP-addresses</h2>
-        <table>
+        <table style="alignment: center; padding: 30px; font-size: large"; cellpadding = 20px>
+
             {% for item in sites['sites'] %}
                 <tr>
+                    <td>{{loop.index}}</td>
+
                     <td>{{item['address']}}</td>
-                    <td>-------------------</td>>
+
                     <td>{{item['state']}}</td>
                 </tr>
             {% endfor %}
         </table>
-    </main>
 </body>
 </html>
 

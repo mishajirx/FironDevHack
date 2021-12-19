@@ -1,15 +1,15 @@
 {
   "sites": [
     {
-      "address": "127.0.0.1:8080",
+      "address": "http://127.0.0.1:8080/",
       "state": "Active"
     },
     {
-      "address": "127.0.0.1:3000",
+      "address": "http://127.0.0.1:8000/",
       "state": "Active"
     },
     {
-      "address": "127.0.0.1:3000",
+      "address": "http://127.0.0.1:5050/",
       "state": "Not Found (404)"
     }
   ]
