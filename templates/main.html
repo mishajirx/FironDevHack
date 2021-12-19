@@ -3,17 +3,20 @@
 {% block content %}
 
 <h2>Your IP-addresses</h2>
-        <table style="alignment: center; padding: 30px; font-size: large"; cellpadding = 20px>
+<table style="alignment: center; padding: 30px; font-size: large" ; cellpadding=20px>
 
-            {% for item in sites['sites'] %}
-                <tr>
-                    <td>{{loop.index}}</td>
+    {% for item in sites['sites'] %}
+    <tr>
+        <td>{{loop.index}}</td>
 
-                    <td>{{item['address']}}</td>
+        <td>{{item['address']}}</td>
 
-                    <td>{{item['state']}}</td>
-                </tr>
-            {% endfor %}
-        </table>
+        <td>{{item['state']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<p>
+    <a class="btn btn-primary " href="/add">Добавить сайт</a>
+</p>
 
 {% endblock %}
