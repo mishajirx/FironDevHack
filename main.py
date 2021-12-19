@@ -20,8 +20,11 @@ ans = {
 def hello():
     for i in range(len(sites['sites'])):
         address = sites['sites'][i]['address']
-        res = get(address)
-        sites['sites'][i]['state'] = ans[res.status_code]
+        try:
+            res = get(address)
+            sites['sites'][i]['state'] = ans[res.status_code]
+        except Exception:
+            sites['sites'][i]['state'] = "Nonactive"
     return render_template('base.html', sites=sites)
 
 
