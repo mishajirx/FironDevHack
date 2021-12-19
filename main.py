@@ -10,7 +10,7 @@ sites = load(open("sites.json"))
 ans = {
     200: "Active",
     201: "Active",
-    404: "Not found (400)",
+    404: "Not found (404)",
     502: "Bad request",
     500: "Internal Server Error"
 }
